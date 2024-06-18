@@ -12,13 +12,13 @@ export default function App() {
     <BrowserRouter>
     <Routes>
       <Route index element={<Login />} />
-      
-      
-        <Route path="/dashboard" element={<Display />} />
-        <Route path="/create" element={<Create />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/register" element={<Register />} />
-
+          
+        <Route element={<AuthRoute />}>
+          <Route path="/dashboard" element={<Display />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/register" element={<Register />} />
+        </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>
