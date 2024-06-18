@@ -54,7 +54,7 @@ export default function Login() {
           <button type="submit" className='w-full bg-blue-900 text-white py-4 rounded-md hover:opacity-75 font-bold text-xl'>Continue</button>
         </form>
         
-        <p className='mt-4'>Already have an account? <Link to="/" className='text-blue-900'>Sign in</Link></p>
+        <p className='mt-4'>don't have an account? <Link to="/register" className='text-blue-900'>Sign up</Link></p>
         {error && <Alert msg={error.response.data.error} />}
       </div>
     </section>

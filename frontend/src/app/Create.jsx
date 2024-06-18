@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 export default function Create() {
     const navigate = useNavigate()
-    //handle change
+    //handle changes
     const [formData, setformData] = useState({})
     const handleChange = (e) =>{
         setformData({

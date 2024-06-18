@@ -18,7 +18,7 @@ app.use(cors());
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "ruth",
+  password: "",
   database: "library",
 });
 
@@ -78,6 +78,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  */
 
 //==================================== Register student ================================
+
 app.post("/register", async (req, res) => {
   const { id, firstname, lastname, email, password } = req.body;
   //check if all field are not empty
@@ -94,7 +95,7 @@ app.post("/register", async (req, res) => {
   const q = "INSERT INTO students(`id`, `firstname`, `lastname`, `email`, `password`) VALUES (?,?,?,?,?)";
 
   db.query(q, datas, (error, data) => {
-    if (error) return res.status(403).json({ error: "Internal server error" });
+    if (error) return res.status(403).json({error:"error"});
     res.status(200).json(data);
   });
 
