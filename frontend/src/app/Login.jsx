@@ -22,7 +22,7 @@ export default function Login() {
 
     try {
       // Check if the user exists
-      const user = await axios.post(`http://localhost:3000/register`, formData);
+      const user = await axios.post(`http://localhost:3000/login`, formData);
       navigate('/dashboard')
     } catch (error) {
       setError(error)
@@ -47,8 +47,7 @@ export default function Login() {
         
         {/* Form */}
         <form onSubmit={handleSubmit} className='flex flex-col w-full max-w-md gap-4'>
-          <input type="text" placeholder="Enter your firstname" name="firstname" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
-          <input type="text" placeholder="Enter your lastname" name="lastname" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
+          
           <input type="email" placeholder="Enter your email" name="email" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
           <input type="password" placeholder="Enter your password" name="password" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
           
