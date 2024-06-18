@@ -28,7 +28,7 @@ db.connect((error)=>{
   console.log("connected to database");
 })
 //port to listen
-app.listen(3000, () => {
+app.listen(3703, () => {
   console.log("listening on port 3000");
 });
 

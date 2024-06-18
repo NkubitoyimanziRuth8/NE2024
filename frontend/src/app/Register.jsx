@@ -22,7 +22,7 @@ export default function Register() {
 
     try {
       // Check if the user exists
-      const user = await axios.post(`http://localhost:3000/register`, formData);
+      const user = await axios.post(`http://localhost:3703/register`, formData);
       navigate('/');
     } catch (error) {
       setError(error);
@@ -56,7 +56,7 @@ export default function Register() {
         </form>
 
         <p className='mt-4'>Already have an account? <Link to="/" className='text-gray-900'>Sign in</Link></p>
-        {error && <Alert msg={error.response.data.error} />}
+        {error &&error.response.data && <Alert msg={error.response.data.error} />}
       </div>
     </section>
   );

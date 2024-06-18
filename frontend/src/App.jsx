@@ -11,14 +11,15 @@ export default function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route index element={<Login />} />
+      <Route path='/' index element={<Login />} />
           
         <Route element={<AuthRoute />}>
           <Route path="/dashboard" element={<Display />} />
-          <Route path="/create" element={<Create />} />
+          
+        </Route>
+        <Route path="/create" element={<Create />} />
           <Route path="/search" element={<Search />} />
           <Route path="/register" element={<Register />} />
-        </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>
