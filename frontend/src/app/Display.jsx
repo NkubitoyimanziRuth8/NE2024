@@ -44,7 +44,7 @@ export default function Display() {
     book.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
     book.publisher.toLowerCase().includes(searchTerm.toLowerCase()) ||
     book.publicationYear.toString().includes(searchTerm.toLowerCase()) ||
-    book.Subject.toLowerCase().includes(searchTerm.toLowerCase())
+    book.subject.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   // Pagination logic
@@ -90,7 +90,7 @@ export default function Display() {
               <td className='border p-2'>{book.author}</td>
               <td className='border p-2'>{book.publisher}</td>
               <td className='border p-2'>{book.publicationYear}</td>
-              <td className='border p-2'>{book.Subject}</td>
+              <td className='border p-2'>{book.subject}</td>
             </tr>
           ))}
         </tbody>
@@ -100,7 +100,7 @@ export default function Display() {
           <button
             key={index + 1}
             onClick={(event) => handleClick(event, index + 1)}
-            className={`mx-1 px-3 py-1 border rounded ${currentPage === index + 1 ? 'bg-gray-500 text-white' : 'bg-white text-blue-500'}`}
+            className={`mx-1 px-3 py-1 border rounded ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'}`}
           >
             {index + 1}
           </button>

@@ -33,17 +33,17 @@ export default function Login() {
   return (
     <section className='flex flex-col lg:flex-row justify-center items-center w-[100vw] h-[100vh]'>
       {/* Left Section */}
-      <div className='bg-blue-900 text-white flex flex-col justify-center items-center w-full lg:w-1/2 h-[50vh] lg:h-full p-8'>
-        <h1 className='text-3xl font-bold mb-4'>Welcome Back to Book Management</h1>
-        <p className='text-lg text-center'>
+      <div className='bg-gray-900 text-white flex flex-col justify-center items-center w-full lg:w-1/2 h-[50vh] lg:h-full p-8'>
+        <h1 className='text-3xl font-bold mb-4'>welcome back to RRR</h1>
+        {/* <p className='text-lg text-center'>
           Student management system where you can manage and control all the students available.
-        </p>
+        </p> */}
       </div>
       
       {/* Right Section */}
       <div className='flex flex-col justify-center items-center w-full lg:w-1/2 p-8'>
-        <h1 className='text-2xl font-bold text-blue-900 mb-4'>Sign up</h1>
-        <p className='mb-6 text-gray-600'>Happy to have you here</p>
+        <h1 className='text-2xl font-bold text-gray-900 mb-4'>Sign in</h1>
+        {/* <p className='mb-6 text-gray-600'>Happy to have you here</p> */}
         
         {/* Form */}
         <form onSubmit={handleSubmit} className='flex flex-col w-full max-w-md gap-4'>
@@ -51,7 +51,7 @@ export default function Login() {
           <input type="email" placeholder="Enter your email" name="email" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
           <input type="password" placeholder="Enter your password" name="password" onChange={handleChange} className='py-4 px-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
           
-          <button type="submit" className='w-full bg-blue-900 text-white py-4 rounded-md hover:opacity-75 font-bold text-xl'>Continue</button>
+          <button type="submit" className='w-full bg-gray-900 text-white py-4 rounded-md hover:opacity-75 font-bold text-xl'>Continue</button>
         </form>
         
         <p className='mt-4'>don't have an account? <Link to="/register" className='text-blue-900'>Sign up</Link></p>

@@ -34,10 +34,10 @@ export default function Register() {
     <section className='flex flex-col lg:flex-row justify-center items-center w-[100vw] h-[100vh]'>
       {/* Left Section */}
       <div className='bg-gray-900 text-white flex flex-col justify-center items-center w-full lg:w-1/2 h-[50vh] lg:h-full p-8'>
-        <h1 className='text-3xl font-bold mb-4'>Welcome to Book Management</h1>
-        <p className='text-lg text-center'>
+        <h1 className='text-3xl font-bold mb-4'>Read Relax & Retreat</h1>
+        {/* <p className='text-lg text-center'>
           Student management system where you can manage and control all the students available.
-        </p>
+        </p> */}
       </div>
 
       {/* Right Section */}
