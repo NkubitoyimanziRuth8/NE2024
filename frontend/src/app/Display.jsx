@@ -30,6 +30,7 @@ export default function Display() {
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
+  // search
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
