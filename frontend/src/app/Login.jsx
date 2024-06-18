@@ -24,9 +24,10 @@ export default function Login() {
       // Check if the user exists
       const user = await axios.post(`http://localhost:3703/login`, formData);
       localStorage.setItem("email",user.data.data[0].email)
-      console.log(user,"user--------------");
+      console.log(user,"useyyyyr--------------");
 
       navigate('/dashboard')
+      // window.location.href = '/dashboard'
     } catch (error) {
       setError(error)
       console.log("Error message::", error);
