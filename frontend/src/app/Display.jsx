@@ -60,7 +60,7 @@ export default function Display() {
 
   return (
     <div className='text-center flex flex-col h-full mt-4 gap-4 items-center justify-center'>
-      <h1 className='text-2xl font-bold text-blue-800'>Available books</h1>
+      <h1 className='text-2xl font-bold text-gray-900'>Available books</h1>
       <form onSubmit={handleSubmit} className='bg-slate-100 p-3 rounded-lg flex items-center'>
         <input
           type='text'
@@ -100,7 +100,7 @@ export default function Display() {
           <button
             key={index + 1}
             onClick={(event) => handleClick(event, index + 1)}
-            className={`mx-1 px-3 py-1 border rounded ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'}`}
+            className={`mx-1 px-3 py-1 border rounded ${currentPage === index + 1 ? 'bg-gray-500 text-white' : 'bg-white text-blue-500'}`}
           >
             {index + 1}
           </button>

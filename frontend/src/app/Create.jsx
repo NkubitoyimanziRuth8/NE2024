@@ -28,7 +28,7 @@ export default function Create() {
 
   return (
     <section className='flex flex-col justify-center items-center w-[100vw] h-full p-4 gap-4'>
-       <h1 className='text-2xl font-bold text-blue-900'>Insert new Employee</h1>
+       <h1 className='text-2xl font-bold text-blue-800'>Insert new Employee</h1>
        <form onSubmit={handleSubmit} className='flex flex-col w-[60%] gap-4'>
          <input onChange={handleChange} type="text" placeholder="Enter id"  name="id"  className='py-4 px-2 border-2 border-slate-400 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>
          <input onChange={handleChange} type="text" placeholder="Enter Firstname"  name="firstname"  className='py-4 px-2 border-2 border-slate-400 rounded-md focus:outline-none focus:border-blue-800 placeholder:text-lg'/>

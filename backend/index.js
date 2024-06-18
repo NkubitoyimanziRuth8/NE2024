@@ -34,7 +34,7 @@ app.listen(3000, () => {
 
 // Swagger endpoint
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
+// ----------------------------------------------http://localhost:3000/api-docs---------------
 // Routes
 // Register student endpoint - Example
 /**
